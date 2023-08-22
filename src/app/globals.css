@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+body {
+  @apply pb-0 mb-0;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  @apply font-bold text-center text-7xl;
+}
+
+h2 {
+  @apply my-4 text-3xl font-semibold;
+}
+
+p {
+  @apply my-2 font-light;
+}
+
+.single-page ul {
+  @apply list-disc;
+  padding: revert;
+}
+
+.home-image-zoom {
+  transform: scale(1.1);
+}
+
+.single-news-image {
+  transform: scale(1.2);
+}
+
+.border-black {
+  border: 1px solid black;
+}
+
+.border-grey {
+  border: 1px solid #cacaca;
+}
+
+.border-purple {
+  border: 2px solid #7335e0;
+}
+
+.contact-half-bg {
+  background-repeat: repeat-x;
+  background-size: auto 70%;
+}
+
+.featured {
+  @apply row-start-1 row-end-3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.featureImage {
+  @apply !absolute !h-full;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
